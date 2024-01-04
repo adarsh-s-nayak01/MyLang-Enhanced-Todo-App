@@ -1,16 +1,94 @@
 .App {
   text-align: center;
 }
+/* styles to the container of the application */
+.AppContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+/* Style for the input element for adding new tasks */
+input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+/* Style the button for adding new tasks */
+button {
+  padding: 10px;
+  width: 100px;
+  background-color: "#007FFF";
+  margin-bottom: 20px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Style the container for individual tasks */
+.task-container {
+  background-color: white;
+  border: 0.5px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  max-height: 30px;
+}
+/* Style the content section within the task container */
+.task-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button-container {
+  display: flex;
+  margin-left: 30px;
+}
+/* Style the 'Complete' button within a task */
+.complete-button {
+  height: 30px;
+  background-color: transparent;
+  color: #007fff;
+  font-weight: 20;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+  padding: 2px;
+}
+/* Style the 'Complete' button when the task is marked as completed */
+.complete-button.completed {
+  color: grey;
+}
+/* Style the 'Delete' button within a task */
+.delete-button {
+  height: 30px;
+  background-color: transparent;
+  color: #007fff;
+  font-weight: 20;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
 .App-header {
